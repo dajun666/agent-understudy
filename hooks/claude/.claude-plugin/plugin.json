@@ -1,0 +1,37 @@
+{
+  "name": "agent-understudy",
+  "version": "0.1.0",
+  "description": "Swap secrets and PII for stand-ins in every conversation row before it is stored or sent; restore them where tools run; project credentials the model never sees",
+  "userConfig": {
+    "gateway": {
+      "type": "string",
+      "title": "Engine URL (optional)",
+      "description": "Leave empty: each session starts its own engine (no daemon). Set it to use a long-lived `understudy up` instead.",
+      "default": ""
+    },
+    "cli": {
+      "type": "string",
+      "title": "agent-understudy command",
+      "description": "How to run the CLI that starts a session's engine",
+      "default": "agent-understudy"
+    },
+    "failClosed": {
+      "type": "boolean",
+      "title": "Withhold content when no engine is reachable",
+      "description": "On: rows are replaced with a notice if they cannot be scanned. Off: they pass through unscanned.",
+      "default": true
+    }
+  },
+  "author": {
+    "name": "agent-understudy"
+  },
+  "license": "Apache-2.0",
+  "mcpServers": {
+    "agent-understudy": {
+      "command": "agent-understudy",
+      "args": [
+        "mcp"
+      ]
+    }
+  }
+}

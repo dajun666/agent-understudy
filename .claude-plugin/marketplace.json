@@ -1,0 +1,16 @@
+{
+  "name": "agent-understudy",
+  "owner": {
+    "name": "agent-understudy"
+  },
+  "plugins": [
+    {
+      "name": "agent-understudy",
+      "source": "./hooks/claude",
+      "description": "Swap secrets and PII for placeholders in every conversation row; restore them where tools run"
+    }
+  ],
+  "metadata": {
+    "description": "agent-understudy: keep secrets and PII out of coding-agent API traffic"
+  }
+}

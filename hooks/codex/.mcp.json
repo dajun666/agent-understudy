@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "agent-understudy": {
+      "command": "agent-understudy",
+      "args": [
+        "mcp"
+      ],
+      "env_vars": [
+        "AGENT_UNDERSTUDY_HOME",
+        "AGENT_UNDERSTUDY_GATEWAY"
+      ]
+    }
+  }
+}

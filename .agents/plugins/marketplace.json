@@ -1,0 +1,6 @@
+{
+  "name": "agent-understudy",
+  "plugins": [
+    { "name": "agent-understudy", "source": { "source": "local", "path": "./hooks/codex" } }
+  ]
+}

@@ -1,0 +1,15 @@
+[project]
+name = "agent-understudy-sidecar"
+version = "0.1.0"
+description = "Local PII/secret detector sidecar for agent-understudy"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "torch>=2.6",
+  "transformers>=4.50",
+  "huggingface_hub>=0.30",
+  "gliner>=0.2.20",
+  "opf @ git+https://github.com/openai/privacy-filter",
+]
+
+[tool.uv]
+package = false

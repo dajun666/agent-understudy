@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "es2023", "lib": ["es2023", "dom"], "module": "esnext", "moduleResolution": "bundler",
+    "strict": true, "noEmit": true, "skipLibCheck": true, "types": ["node"],
+    "allowImportingTsExtensions": true,
+    "jsx": "preserve", "jsxImportSource": "@opentui/solid"
+  },
+  "include": ["agent-understudy.ts", "agent-understudy-tui.tsx", "secret-handoff.ts", "masked-input.ts"]
+}

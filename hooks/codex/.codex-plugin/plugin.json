@@ -1,0 +1,11 @@
+{
+  "name": "agent-understudy",
+  "version": "0.1.0",
+  "description": "Project credentials the model never sees (secret_request, $AGENT_SECRET_<NAME>, Hide(NAME)) and a guard that stops unrestored stand-ins from reaching tools. Pair with the agent-understudy gateway (openai_base_url) for redaction.",
+  "mcpServers": "./.mcp.json",
+  "hooks": "./hooks.json",
+  "interface": {
+    "displayName": "agent-understudy"
+  },
+  "skills": "./skills"
+}

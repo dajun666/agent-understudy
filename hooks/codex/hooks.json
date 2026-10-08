@@ -1,0 +1,38 @@
+{
+  "description": "agent-understudy: load $AGENT_SECRET_<NAME> into shell commands at run time; refuse calls that still carry stand-ins",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$PLUGIN_ROOT/guard.mjs\" --inject",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$PLUGIN_ROOT/guard.mjs\" --post",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$PLUGIN_ROOT/guard.mjs\" --session-start",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}

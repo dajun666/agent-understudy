@@ -1,0 +1,44 @@
+{
+  "name": "agent-understudy",
+  "version": "0.1.0",
+  "description": "Local gateway that swaps secrets and PII for placeholders before coding-agent traffic leaves your machine, with an ensemble of local detectors that vote",
+  "type": "module",
+  "license": "Apache-2.0",
+  "bin": {
+    "understudy": "bin/understudy",
+    "agent-understudy": "bin/understudy"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "@clack/prompts": "^1.8.1",
+    "@faker-js/faker": "^10.6.0",
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "smol-toml": "^1.9.0",
+    "ws": "^8.22.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "^1.18.35",
+    "@opentui/core": "^0.4.5",
+    "@opentui/keymap": "^0.4.5",
+    "@opentui/solid": "^0.4.5",
+    "@types/node": "^26.6.4",
+    "@types/ws": "^8.18.2",
+    "solid-js": "^1.9.12",
+    "typescript": "^7.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dajun666/agent-understudy.git"
+  },
+  "homepage": "https://github.com/dajun666/agent-understudy#readme",
+  "bugs": {
+    "url": "https://github.com/dajun666/agent-understudy/issues"
+  }
+}

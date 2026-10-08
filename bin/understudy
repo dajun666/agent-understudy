@@ -1,0 +1,3 @@
+#!/usr/bin/env node
+import { main } from "../src/cli.ts";
+main().catch((e) => { console.error(e?.message ?? e); process.exit(1); });

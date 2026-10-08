@@ -1,0 +1,4 @@
+node_modules/
+sidecar/.venv/
+__pycache__/
+hooks/claude/.claude-plugin/types/
